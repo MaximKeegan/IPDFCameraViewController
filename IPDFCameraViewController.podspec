@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.author    	 = "Maximilian Mackh"
   s.social_media_url   = "https://twitter.com/mmackh"
 
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "7.0"
 
   s.source       = { :git => "https://github.com/barrettj/IPDFCameraViewController.git", :tag => "#{s.version}" }
 

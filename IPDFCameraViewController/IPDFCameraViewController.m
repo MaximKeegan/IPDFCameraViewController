@@ -402,7 +402,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^
     {
-          detector = [CIDetector detectorOfType:CIDetectorTypeRectangle context:nil options:@{CIDetectorAccuracy : CIDetectorAccuracyLow,CIDetectorTracking : @(YES)}];
+          detector = [CIDetector detectorOfType:@"CIDetectorTypeRectangle" context:nil options:@{CIDetectorAccuracy : CIDetectorAccuracyLow,CIDetectorTracking : @(YES)}];
     });
     return detector;
 }
@@ -413,7 +413,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^
     {
-        detector = [CIDetector detectorOfType:CIDetectorTypeRectangle context:nil options:@{CIDetectorAccuracy : CIDetectorAccuracyHigh}];
+        detector = [CIDetector detectorOfType:@"CIDetectorTypeRectangle" context:nil options:@{CIDetectorAccuracy : CIDetectorAccuracyHigh}];
     });
     return detector;
 }
